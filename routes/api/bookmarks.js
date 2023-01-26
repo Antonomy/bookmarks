@@ -4,7 +4,7 @@ const checkToken = require('../../config/checkToken')
 const ensureLoggedIn = require('../../config/ensureLoggedIn')
 
 /* /api/bookmarks/:id
-DELETE 
+DELETE
 destroy bookmark
 */
 router.delete('/:id', checkToken, ensureLoggedIn, bookmarkCtrl.destroyBookmark, bookmarkCtrl.respondWithBookmark)

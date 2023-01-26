@@ -1,0 +1,27 @@
+button {
+  background-color: var(--text-dark);
+  color: var(--text-light);
+  border-radius: .5vmin;
+  margin: 1vmin;
+  font-size: 2vmin;
+  height: 3vmin;
+}
+
+a, a:visited, a:link {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--text-black);
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  background-color: white;
+  border: 1px solid var(--text-dark);
+  box-shadow: 4px 8px 16px var(--text-dark);
+  display: flex;
+  font-size: 2.5vmin;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vmin;
+}

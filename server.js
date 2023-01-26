@@ -11,8 +11,8 @@ const app = express()
 
 app.use(express.json())
 app.use((req, res, next) => {
-    res.locals.data = {}
-    next()
+  res.locals.data = {}
+  next()
 })
 
 app.use(logger('dev'))
@@ -24,9 +24,9 @@ app.use('/api/users', require('./routes/api/users'))
 app.use('/api/bookmarks', require('./routes/api/bookmarks'))
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'))
+  res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
 
 app.listen(PORT, () => {
-    console.log(`I am listening on Port: ${PORT}`)
+  console.log(`I am listening on Port: ${PORT}`)
 })
