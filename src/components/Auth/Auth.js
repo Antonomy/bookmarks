@@ -3,7 +3,6 @@ import Login from '../Login/Login'
 import SignUp from '../SignUp/SignUp'
 import styles from './Auth.module.scss'
 
-
 export default function Auth ({
   login,
   signUp,

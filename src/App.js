@@ -3,7 +3,7 @@ import Auth from './components/Auth/Auth'
 import CreateBookmark from './components/CreateBookmark/CreateBookmark'
 import BookmarkList from './components/BookmarkList/BookmarkList'
 
-export default function App() {
+export default function App () {
   /*
     Login, SignUp, CreateBookmark, ListBookmarksByUser, DeleteBookmark, UpdateBookmark
     */
@@ -154,14 +154,15 @@ export default function App() {
   return (
     <>
       {
-        token ?
-          <button onClick={() => {
+        token
+          ? <button onClick={() => {
             localStorage.removeItem('token')
             window.location.reload()
-          }}>
+          }}
+            >
             Logout
-          </button> :
-          ''
+            </button>
+          : ''
       }
 
       <Auth
